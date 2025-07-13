@@ -1,2 +1,2 @@
-sklearn
+sciket-learn
 flask
