@@ -4,13 +4,8 @@ import numpy as np
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 app = Flask(__name__)
-<<<<<<< HEAD:application.py
-ridge_model = pickle.load(open('models/ridge.pkl','rb'))
-standard_scaler = pickle.load(open('models/scaler.pkl','rb'))
-=======
 ridge_model = pickle.load(open('ridge.pkl','rb'))
 standard_scaler = pickle.load(open('scaler.pkl','rb'))
->>>>>>> f32de830b5fa3976afdabbb93b8a39b095e438b6:app.py
 @app.route("/")
 def index():
     return render_template("index.html")
